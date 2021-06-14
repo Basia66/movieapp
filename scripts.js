@@ -37,7 +37,7 @@ function sortA(x, c) {
     lunrIndex.search(term).map(res => res.ref)
         
     const gamesIndex = createLunrIndex(x);
-    var resSet = search(gamesIndex, c);
+    var resSet = search(gamesIndex, c + "*");
 
     for (let index = 0; index < resSet.length; index++) {
         const element = resSet[index];
@@ -82,6 +82,5 @@ function init_movie() {
             document.getElementsByClassName("title")[0].innerHTML = movie["title"];
             document.getElementsByClassName("genre")[0].innerHTML = movie["genre"];
             document.getElementsByClassName("desc")[0].innerHTML = movie["description"];
-            document.getElementsByClassName("poster_img")[0].innerHTML = movie["poster"];
         })
 }
