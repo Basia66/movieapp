@@ -90,6 +90,9 @@ input[type=checkbox] {
     background-color: #671212;
     color: #ffffff;
     text-decoration: none;
+    font: inherit;
+    cursor: pointer;
+    border: none;
 }
 
 .submit:hover {
