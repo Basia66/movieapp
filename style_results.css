@@ -18,6 +18,12 @@ header {
 	height: 300px;
 }
 
+a {
+    font-size: 150%;
+    font-weight: 300;
+    color: #671212;
+}
+
 .login {
     position: relative;
     margin: 0;
