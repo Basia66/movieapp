@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    color: #671212;
+}
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(bg3_login.png);
+	background-size: cover;
+	background-position:top;
+	height: 300px;
+}
+
+.login_text {
+	position: relative;
+	font-size: 20px;
+	width: 1140px;
+	top: 180%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+h1 {
+    margin: 0;
+    font-size: 350%;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #671212;
+}
+
+input[type=text], input[type=password] {
+    position: relative;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    position: relative;
+    background-color: #671212;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font: inherit;
+}
+
+button:hover {
+     opacity: 0.8;
+}
+
+input[type=checkbox] {
+    position: relative;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    margin: 8px 0;
+    background-color: #3e1b1b;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cancelbtn:hover {
+        opacity: 0.8;
+}
+
+.cancel_container {
+    width: auto;
+    padding: 30px 0px;
+    margin: 8px 0;
+}
+
+.uname:link,
+.btn1:visited {
+    background-color: #671212;
+    color: #ffffff;
+    margin-left: 100px;
+}
+
+.btn2:link,
+.btn2:visited {
+    color: #ffffff;
+    border: 1px solid #671212;
+    margin-left: 15px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #904e4e;
+    color: #671212;
+}

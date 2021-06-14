@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	color: white;
+}
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(bg5.png);
+	background-size: cover;
+	background-position:centered;
+	height: 100vh;
+}
+
+.movie_text {
+	position: absolute;
+	font-size: 20px;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+h1 {
+	margin: 0;
+	font-size: 350%;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 20px; 
+}
+
