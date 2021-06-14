@@ -17,13 +17,13 @@
         <div class="search_text">
 
             <h1>Search movies</h1>
-
-            <label for="uname"><b>Enter a phrase</b></label>
-            <input type="text" placeholder="Search for movies" name="uname" required>
-
-            <a class="submit" href="result_page.html">Search</a>
-            <a class="cancelbtn" href="index.html">Cancel</a>
-
+            <form action="result_page.html">
+                <label for="uname"><b>Enter a phrase</b></label>
+                <input name="search_query" type="text" placeholder="Search for movies" name="uname" required>
+    
+                <input type="submit" class="submit" value="Search">
+                <a class="cancelbtn" href="index.html">Cancel</a>
+            </form>
         </div>
 
 
