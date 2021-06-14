@@ -82,5 +82,6 @@ function init_movie() {
             document.getElementsByClassName("title")[0].innerHTML = movie["title"];
             document.getElementsByClassName("genre")[0].innerHTML = movie["genre"];
             document.getElementsByClassName("desc")[0].innerHTML = movie["description"];
+            document.title = movie["title"];
         })
 }
