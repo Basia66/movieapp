@@ -28,8 +28,6 @@ function sortA(x, c) {
     lunr(function () {
         this.ref('movie_id');
         this.field('title');
-        this.field('genre');
-        this.field('description');
         for (doc of docs) this.add(doc);
     });
 
@@ -39,14 +37,27 @@ function sortA(x, c) {
     const gamesIndex = createLunrIndex(x);
     var resSet = search(gamesIndex, c + "*");
 
+    var res = []
     for (let index = 0; index < resSet.length; index++) {
         const element = resSet[index];
         for (let j = 0; j < x.length; j++) {
             if (element == x[j]["movie_id"])
             {
-                appendRecord(x[j]);
+                res.push(x[j]);
             }
         }
+    }
+    res.sort(function(a, b) {
+        var textA = a.title.toUpperCase();
+        var textB = b.title.toUpperCase();
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
+
+    console.log(res);
+
+    for (let index = 0; index < res.length; index++) {
+        const el = res[index];
+            appendRecord(el);
     }
 }
 
