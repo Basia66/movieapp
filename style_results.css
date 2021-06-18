@@ -37,13 +37,13 @@ a {
 }
 
 .search_text {
-	position: relative;
-	font-size: 20px;
-	width: 1140px;
-	top: 130%;
-	left: 50%;
-	transform: translate(-50%, 0%);
-
+    position: relative;
+    font-size: 20px;
+    width: 1140px;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 0px 0px 100px 0px;
 }
 
 h1 {

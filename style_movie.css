@@ -31,13 +31,13 @@ header {
 }
 
 .search_text {
-	position: relative;
-	font-size: 20px;
-	width: 1140px;
-	top: 80%;
-	left: 50%;
-	transform: translate(-50%, -40%);
-
+    position: relative;
+    font-size: 20px;
+    width: 1140px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    padding: 20px 0px 60px 0px;
 }
 
 .poster {
