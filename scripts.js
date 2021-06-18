@@ -16,9 +16,14 @@ function csvJSON(csv) {
 
 function appendRecord(el) {
     var node = document.createElement("a");
-    var textnode = document.createTextNode(el["title"]);
-    node.appendChild(textnode);
     node.href = "movie_page.html?id=" + el["movie_id"];
+    document.getElementById("result").appendChild(node);
+    document.getElementById("result").appendChild(document.createElement("br"));
+}   
+
+function appendNullRecord() {
+    var node = document.createElement("p");
+    node.innerHTML = "Nie ma takiego filmu";
     document.getElementById("result").appendChild(node);
     document.getElementById("result").appendChild(document.createElement("br"));
 }   
@@ -47,13 +52,18 @@ function sortA(x, c) {
             }
         }
     }
+
+    if (res.length == 0)
+    {
+        appendNullRecord();
+        return;
+    }
+
     res.sort(function(a, b) {
         var textA = a.title.toUpperCase();
         var textB = b.title.toUpperCase();
         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     });
-
-    console.log(res);
 
     for (let index = 0; index < res.length; index++) {
         const el = res[index];
