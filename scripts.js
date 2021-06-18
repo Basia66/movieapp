@@ -16,6 +16,8 @@ function csvJSON(csv) {
 
 function appendRecord(el) {
     var node = document.createElement("a");
+    var textnode = document.createTextNode(el["title"]);
+    node.appendChild(textnode);
     node.href = "movie_page.html?id=" + el["movie_id"];
     document.getElementById("result").appendChild(node);
     document.getElementById("result").appendChild(document.createElement("br"));
